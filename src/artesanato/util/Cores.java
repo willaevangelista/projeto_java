@@ -1,4 +1,4 @@
-package musica.util;
+package artesanato.util;
 
 public class Cores {
 

@@ -1,8 +1,8 @@
-package musica;
+package artesanato;
 
 
 import java.util.Scanner;
-import musica.util.Cores;
+import artesanato.util.Cores;
 
 public class Menu {
     public static void main(String[] args) {
@@ -17,19 +17,19 @@ public class Menu {
 			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
 					+ "*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("                CINEMOVIES E-COMMERCE                ");
+			System.out.println("         ARTESANANDO - ARTIGOS FEITOS A MAO          ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
-			System.out.println("            1 - Adicionar Filme                      ");
-			System.out.println("            2 - Listar todas os Filmes               ");
-			System.out.println("            3 - Buscar Filme por Código              ");
-			System.out.println("            4 - Atualizar Dados do Filme             ");
-			System.out.println("            5 - Excluir Filme                        ");
-			System.out.println("            6 - Adicionar Filme ao Carrinho          ");
-			System.out.println("            7 - Exibir Carrinho                      ");
-			System.out.println("            8 - Finalizar Compra                     ");
-			System.out.println("            9 - Sair                                 ");
+			System.out.println("      1 - Adicionar Artesanato                       ");
+			System.out.println("      2 - Listar todas os Artesanatos                ");
+			System.out.println("      3 - Buscar Artesanato por Número               ");
+			System.out.println("      4 - Atualizar Dados do Artesanato              ");
+			System.out.println("      5 - Excluir Artesanato                         ");
+			System.out.println("      6 - Ver Novidades Artesanais                   ");
+			System.out.println("      7 - Listar Artesanatos por Categoria           ");
+			System.out.println("      8 - Listar Artesanais Técnicas Mais Usadas     ");
+			System.out.println("      9 - Sair                                       ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
@@ -40,7 +40,7 @@ public class Menu {
 			opcao = leia.nextInt();
 
 			if (opcao == 9) {
-				System.out.println("\nBanco do Brazil com Z - O seu Futuro começa aqui!");
+				System.out.println("\nArtesanando – Cada peça, uma história feita à mão!");
 
                  leia.close();
 				System.exit(0);
@@ -48,35 +48,35 @@ public class Menu {
 
 			switch (opcao) {
 				case 1:
-					System.out.println("Criar Conta\n\n");
+					System.out.println("Adicionar Artesanato\n\n");
 
 					break;
 				case 2:
-					System.out.println("Listar todas as Contas\n\n");
+					System.out.println("Listar todas os Artesanatos\n\n");
 
 					break;
 				case 3:
-					System.out.println("Consultar dados da Conta - por número\n\n");
+					System.out.println("Buscar Artesanato por Número\n\n");
 
 					break;
 				case 4:
-					System.out.println("Atualizar dados da Conta\n\n");
+					System.out.println("Atualizar Dados do Artesanato\n\n");
 
 					break;
 				case 5:
-					System.out.println("Apagar a Conta\n\n");
+					System.out.println("Excluir Artesanato\n\n");
 
 					break;
 				case 6:
-					System.out.println("Saque\n\n");
+					System.out.println("Ver Novidades Artesanais\n\n");
 
 					break;
 				case 7:
-					System.out.println("Depósito\n\n");
+					System.out.println("Listar Artesanatos por Categoria\n\n");
 
 					break;
 				case 8:
-					System.out.println("Transferência entre Contas\n\n");
+					System.out.println("Listar Artesanais Técnicas Mais Usadas\n\n");
 
 					break;
 				default:
@@ -89,7 +89,7 @@ public class Menu {
 	public static void sobre () {
 			
 		System.out.println("\n*********************************************************");					
-		System.out.println("Projeto Desenvolvido por: ");
+		System.out.println("Projeto Desenvolvido por: Willa Evangelista");
 		System.out.println("Generation Brasil - generation@generation.org");
 		System.out.println("github.com/conteudoGeneration");
 		System.out.println("*********************************************************");
