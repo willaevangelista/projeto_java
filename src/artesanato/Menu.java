@@ -86,7 +86,7 @@ public class Menu {
 					leia.skip("\\R?");
 					estilo = leia.nextLine();
 					
-					System.out.println("\nInforme Preco do Artesanato: ");
+					System.out.println("\nInforme Preço do Artesanato: ");
 					leia.skip("\\R?");
 					preco = leia.nextFloat();
 					
