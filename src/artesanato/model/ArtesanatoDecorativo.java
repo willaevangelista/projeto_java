@@ -4,19 +4,17 @@ public class ArtesanatoDecorativo extends Artesanato {
 	
 	private String tema;
 
-	public ArtesanatoDecorativo(int tipoArtesanato, 
+	public ArtesanatoDecorativo(
+			int tipoArtesanato, 
 			int numeroArtesanato, 
 			String nomeArtesanato, 
 			String nomeArtesao,
-			String categoria, 
 			String tecnica, 
-			String materiaPrincipal, 
 			String estilo, 
 			float preco, 
 			String tema) {
 		
-		super(tipoArtesanato, numeroArtesanato, nomeArtesanato, nomeArtesao, categoria, tecnica, materiaPrincipal,
-				estilo, preco);
+		super(tipoArtesanato, numeroArtesanato, nomeArtesanato, nomeArtesao, tecnica, estilo, preco);
 		this.tema = tema;
 	}
 
@@ -27,7 +25,5 @@ public class ArtesanatoDecorativo extends Artesanato {
 	public void setTema(String tema) {
 		this.tema = tema;
 	}
-
 	
-
 }

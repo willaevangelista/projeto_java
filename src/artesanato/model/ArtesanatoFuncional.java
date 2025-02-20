@@ -8,14 +8,12 @@ public class ArtesanatoFuncional extends Artesanato {
 			int numeroArtesanato, 
 			String nomeArtesanato, 
 			String nomeArtesao,
-			String categoria, 
 			String tecnica, 
-			String materiaPrincipal, 
 			String estilo, 
 			float preco, 
 			String tipoUso) {
 		
-		super(tipoArtesanato, numeroArtesanato, nomeArtesanato, nomeArtesao, categoria, tecnica, materiaPrincipal,
+		super(tipoArtesanato, numeroArtesanato, nomeArtesanato, nomeArtesao, tecnica,
 				estilo, preco);
 		this.tipoUso = tipoUso;
 	}

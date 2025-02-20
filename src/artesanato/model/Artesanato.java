@@ -6,9 +6,7 @@ public abstract class Artesanato {
 	private int numeroArtesanato;
 	private String nomeArtesanato;
 	private String nomeArtesao;
-	private String categoria;
 	private String tecnica;
-	private String materiaPrincipal;
 	private String estilo;
 	private float preco;
 	
@@ -16,9 +14,7 @@ public abstract class Artesanato {
 			int numeroArtesanato, 
 			String nomeArtesanato, 
 			String nomeArtesao,
-			String categoria, 
 			String tecnica, 
-			String materiaPrincipal, 
 			String estilo, 
 			float preco) {
 	
@@ -26,9 +22,7 @@ public abstract class Artesanato {
 		this.numeroArtesanato = numeroArtesanato;
 		this.nomeArtesanato = nomeArtesanato;
 		this.nomeArtesao = nomeArtesao;
-		this.categoria = categoria;
 		this.tecnica = tecnica;
-		this.materiaPrincipal = materiaPrincipal;
 		this.estilo = estilo;
 		this.preco = preco;
 	}
@@ -80,19 +74,6 @@ public abstract class Artesanato {
 	}
 
 
-
-	public String getCategoria() {
-		return categoria;
-	}
-
-
-
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
-	}
-
-
-
 	public String getTecnica() {
 		return tecnica;
 	}
@@ -101,18 +82,6 @@ public abstract class Artesanato {
 
 	public void setTecnica(String tecnica) {
 		this.tecnica = tecnica;
-	}
-
-
-
-	public String getMateriaPrincipal() {
-		return materiaPrincipal;
-	}
-
-
-
-	public void setMateriaPrincipal(String materiaPrincipal) {
-		this.materiaPrincipal = materiaPrincipal;
 	}
 
 
@@ -169,9 +138,7 @@ public abstract class Artesanato {
 		System.out.println("***************************************************************");
 		System.out.println("Nome do Artesanato: " + this.nomeArtesanato);
 		System.out.println("Nome do(a) Artesão(ã): " + this.nomeArtesao);
-		System.out.println("Categoria: " + this.categoria);
 		System.out.println("Tecnica: " + this.tecnica);
-		System.out.println("Material Principal Utilizado: " + this.materiaPrincipal);
 		System.out.println("Estilo do Artesanato: " + this.estilo);
 		System.out.println("Preço da Peça " + this.preco);
 	}

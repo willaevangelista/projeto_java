@@ -13,7 +13,5 @@ public interface ArtesanatoRepository {
     
     // Métodos Adicionais
     public void verNovidadesArtesanais(); 
-    public void listarArtesanatosPorCategoria(String categoria); 
-    public void listarArtesanatosTecnicasMaisUsadas(String tecnica); 
-
+    
 }
