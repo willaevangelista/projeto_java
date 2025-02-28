@@ -1,12 +1,14 @@
-# 🧶 Projeto Artesanando - Sistema de Gerenciamento de Artesanatos 🪡
+# 📝 Projeto Blog Pessoal - Backend com Spring
 
-O projeto **Artesanando** é uma aplicação de gerenciamento de artesanatos, com funcionalidades para adicionar, excluir e atualizar artesanados, dentre outras. Com isso, o objetivo principal do desenvolvimento deste sistema foi aplicar conceitos de POO e boas práticas em Java, utilizando classes, métodos, e manipulação de dados.
+O projeto **Blog Pessoal** é uma aplicação backend desenvolvida com o Spring Framework. O objetivo principal deste sistema é criar uma API CRUD para gerenciar postagens em um blog, utilizando as boas práticas de desenvolvimento e arquitetura em camadas (Model, Repository, Controller).
 ******
 
 <div align='center'/>
 
   ![Java](https://a11ybadges.com/badge?logo=java)
   ![Spring](https://a11ybadges.com/badge?logo=spring)
+  ![MySQL](https://a11ybadges.com/badge?logo=mysql)
+  ![Insomnia](https://a11ybadges.com/badge?logo=insomnia)
 </div>
 
 
@@ -21,25 +23,26 @@ O projeto **Artesanando** é uma aplicação de gerenciamento de artesanatos, co
 <div id='conhecimentosMobilizados'/> 
   
 ## 💡 Conhecimentos Mobilizados
-- **Programação Orientada a Objetos (POO):** Utilização de conceitos como classes, objetos, herança, polimorfismo e encapsulamento.
-- **Manipulação de dados:** Métodos para depósitos, saques e transferências entre contas.
-- **Tratamento de exceções:** Implementação de validações para garantir a segurança nas transações.
-- **Entrada e saída de dados:** Interação com o usuário via console.
-- **Collections Framework:** Uso de ArrayList para gerenciar múltiplas contas.
+- **Spring Framework:** Utilização do Spring Boot para construção de APIs RESTful, com ênfase nas boas práticas de desenvolvimento.
+- **JPA e Hibernate:** Mapeamento objeto-relacional para interação com o banco de dados MySQL.
+- **Padrões de projeto:** Implementação da arquitetura em camadas (Model, Repository, Controller) e boas práticas para organização do código.
+- **Banco de Dados:** Criação e configuração de banco de dados MySQL, utilizando o Spring Data JPA para persistência de dados.
+- **RESTful API:** Criação de endpoints para manipulação de postagens no blog, com operações CRUD.
 
 <div id='estruturaDoProjeto'/> 
   
 ## 🏗️ Estrutura do Projeto
 ```
-artesanato/
+blogpessoal/
 ├── controller/
-│   └── ArtesanatoController.java
+│   └── PostagemController.java
 ├── model/
-│   ├── ArtesanatoDecorativo.java
-│   └── ArtesanatoFuncional.java
-├── util/
-│   └── Cores.java
-└── Menu.java
+│   └── Postagem.java
+├── repository/
+│   └── PostagemRepository.java
+├── resources/
+│   └── application.properties
+└── BlogPessoalApplication.java
 ```
 <div id='codigoDesenvolvido'/> 
   
@@ -47,18 +50,20 @@ artesanato/
 
 Para melhor visualização, aqui estão os links para os códigos principais:  
 
-- **[Menu](src/artesanato/Menu.java)**: Arquivo principal que executa o menu de navegação.
-- **[ArtesanatoController](src/artesanato/controller/ArtesanatoController.java)**: Controlador que gerencia as operações de adicionar, listar, buscar, atualizar, excluir e visualizar novidades.
-- **[ArtesanatoDecorativo.java](src/artesanato/model/ArtesanatoDecorativo.java)** e **[ArtesanatoFuncional.java](src/artesanato/model/ArtesanatoFuncional.java)**: Modelos que representam os tipos de artesanatos.
-- **[ArtesanatoRepository](src/artesanato/repository/ArtesanatoRepository.java)**: Classe responsável por gerenciar a persistência de dados dos artesanatos, garantindo a integridade e o armazenamento adequado das informações no sistema.
-- **[Cores.java](src/artesanato/util/Cores.java)**: Classe utilitária para controle de cores no terminal.
+- **[PostagemController](src/blogpessoal/controller/PostagemController.java):** Controlador responsável pela manipulação das postagens. Implementa o método `getAll()` para listar todas as postagens.
+- **[Postagem](src/blogpessoal/model/Postagem.java):** Modelo que representa a entidade de uma postagem no banco de dados. Inclui atributos como `id`, `titulo`, `conteudo` e `dataCriacao`.
+- **[PostagemRepository](src/blogpessoal/repository/PostagemRepository.java):** Interface que estende `JpaRepository` e permite a comunicação com o banco de dados MySQL.
+- **[application.properties](src/blogpessoal/resources/application.properties):** Arquivo de configuração que define a conexão com o banco de dados MySQL, incluindo o nome do banco (`db_blogpessoal`) e outras propriedades do Spring.
+- **[BlogPessoalApplication](src/blogpessoal/BlogPessoalApplication.java):** Classe principal que inicializa a aplicação Spring Boot.
 
 <div id='tecnologiasUtilizadas'/> 
 
 ## 🛠️ Tecnologias Utilizadas  
 
-- **Linguagem:** Java
-- **Framework:** Collections Framework  
-- **Paradigma:** Programação Orientada a Objetos (POO)  
-- **IDE utilizada:** Spring Tools Suite 4  
+- **Linguagem:** Java  
+- **Framework:** Spring Boot  
+- **Banco de Dados:** MySQL  
+- **JPA/Hibernate:** Para persistência de dados  
+- **IDE utilizada:** Spring Tools Suite (STS)  
+- **Ferramenta de Testes:** Insomnia 
 
